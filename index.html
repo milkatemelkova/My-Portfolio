@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Milka's Портфолио</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- font-awesome -->
   <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css" />
   <!-- css -->
@@ -116,7 +118,7 @@
         </ul>
       </article>
       <article class="hero-img">
-        <img src="./images/snimka_cv_happy_1.jpg" class="hero-photo" id="front-img" />
+        <img src="./images/sn.png" class="hero-photo" id="front-img" />
       </article>
     </div>
   </header>
@@ -188,6 +190,17 @@
           </div>
         </div>
         <!-- end of single skill -->
+        <!-- single skill -->
+        <div class="skill">
+          <p>Material UI</p>
+          <div class="skill-container">
+            <div class="skill-value value-88"></div>
+            <p class="skill-text skill-value-88" id="percent">
+              71%
+            </p>
+          </div>
+        </div>
+        <!-- end of single skill -->
       </article>
       <article>
 
@@ -208,7 +221,7 @@
           <div class="skill-container">
             <div class="skill-value value-78"></div>
             <p class="skill-text skill-value-78" id="percent">
-              78%
+              92%
             </p>
           </div>
         </div>
@@ -235,6 +248,18 @@
           </div>
         </div>
         <!-- end of single skill -->
+        <!-- single skill -->
+        <div class="skill">
+          <p>SCSS</p>
+          <div class="skill-container">
+            <div class="skill-value value-88"></div>
+            <p class="skill-text skill-value-88" id="percent">
+              88%
+            </p>
+          </div>
+        </div>
+        <!-- end of single skill -->
+
 
       </article>
     </div>
@@ -289,11 +314,26 @@
 
         </p>
       </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">
+            all</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="reactwebsites">React Websites</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="apiprojects">API Projects</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="html/css">HTML/CSS</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+            data-filter="wordpress">Wordpress</a>
+        </div>
+
+      </div>
       <section class="section">
         <!-- end of section title -->
         <div class="section-center projects-page-center">
           <!-- single project -->
-          <article class="single-project">
+          <div class="single-project store-item apiprojects" data-filter="apiprojects">
             <div class="project-container">
               <img src="./images/CookingBook.jpg" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
@@ -314,10 +354,34 @@
                 <a href="https://react-cooking-book-app.netlify.app/" target="_blank">Към Проекта</a>
               </div>
             </div>
-          </article>
+          </div>
           <!-- end of single project -->
           <!-- single project -->
-          <article class="single-project">
+          <div class="single-project store-item apiprojects" data-filter="apiprojects">
+            <div class="project-container">
+              <img src="./images/wiki.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">Wikipedia Search App</h4>
+              <p>
+                App, който извлича данни от Wikipedia API.<br>
+                При търсене, се фетчват данни от Wikipedia API.
+                <br>Използвах Javascript и е респонсив. </p>
+              <div class="project-footer">
+                <span>
+                  <a href="https://github.com/milkatemelkova/wikipedia-API" target="_blank"> <i
+                      class="fab fa-github"></i> Към Кода</a>
+                </span>
+                <a href="https://wikipedia-api-search.netlify.app/" target="_blank">Към Проекта</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project store-item apiprojects" data-filter="apiprojects">
             <div class="project-container">
               <img src="./images/CocktailFinder.jpg" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
@@ -328,7 +392,8 @@
               <h4 class="text-center">Намиране на Коктейли</h4>
               <p>
                 React App, фетчва данни от "CocktailDB" API.<br>
-                Това е React SPA, но има вид на сайт с много страници. Могат да се извличат данни по 2 различни начина- random и при въвеждане в търсачката. 
+                Това е React SPA, но има вид на сайт с много страници. Могат да се извличат данни по 2 различни начина-
+                random и при въвеждане в търсачката.
                 <br>При търсене се извличат всички коктейли, които съдържат търсенето, а не по първи букви. </p>
               <div class="project-footer">
                 <span>
@@ -338,10 +403,10 @@
                 <a href="https://react-cocktail-finder.netlify.app/" target="_blank">Към Проекта</a>
               </div>
             </div>
-          </article>
+          </div>
           <!-- end of single project -->
           <!-- single project -->
-          <article class="single-project">
+          <div class="single-project store-item reactwebsites" data-filter="reactwebsites">
             <div class="project-container">
               <img src="./images/ReactFromStatic.jpg" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
@@ -362,59 +427,138 @@
                   <a href="https://react-spa-from-static-html.netlify.app/" target="_blank">Към Проекта</a>
                 </div>
             </div>
-          </article>
+          </div>
           <!-- end of single project -->
           <!-- single project -->
-          <article class="single-project">
+          <article class="single-project store-item html/css" data-filter="html/css">
             <div class="project-container">
-              <img src="./images/PartyAgency.jpg" alt="single project" />
+              <img src="./images/ecom.png" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
                 <i class="fas fa-home"></i>
               </a>
             </div>
             <div class="project-details">
-              <h4 class="text-center">Бизнес Респонсив Уебсайт с Javascript филтър</h4>
+              <h4 class="text-center">E-commerce Уебсайт</h4>
               <p>
-                Напълно респонсив уебсайт, направих го с HTML, CSS, Bootstrap и Javascript <br> Използвах
-                Javascript за филтъра и има работещ бутон за връщане нагоре.
+                Напълно респонсив уебсайт за магазин, направих го с HTML, CSS, и Javascript <br>
 
 
                 <div class="project-footer">
                   <span>
-                    <a href="https://github.com/milkatemelkova/Party_Agency_Website" target="_blank"> <i
+                    <a href="https://github.com/milkatemelkova/e-commerce-project" target="_blank"> <i
                         class="fab fa-github"></i> Към Кода</a>
                   </span>
-                  <a href="https://party-agency.netlify.app/" target="_blank">Към Проекта</a>
+                  <a href="https://ecommerce-project-mt.netlify.app/products.html" target="_blank">Към Проекта</a>
                 </div>
             </div>
           </article>
           <!-- end of single project -->
+
+
           <!-- single project -->
-          <article class="single-project">
+          <div class="single-project store-item html/css" data-filter="html/css">
             <div class="project-container">
-              <img src="./images/Journal.jpg" alt="single project" />
+              <img src="./images/tr.png" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
                 <i class="fas fa-home"></i>
               </a>
             </div>
             <div class="project-details">
-              <h4 class="text-center">Респонсив Уебсайт- Блог, за новини </h4>
+              <h4 class="text-center">Респонсив Уебсайт Clone на туристически сайт </h4>
               <p>
-                Напълно респонсив уебсайт, направих го с HTML, CSS and Bootstrap.<br>
+                Напълно респонсив уебсайт.<br>
 
 
                 <div class="project-footer">
                   <span>
-                    <a href="https://github.com/milkatemelkova/Journal" target="_blank"> <i class="fab fa-github"></i>
+                    <a href="https://github.com/milkatemelkova/Travelix-Clone" target="_blank"> <i
+                        class="fab fa-github"></i>
                       Към Кода</a>
                   </span>
-                  <a href="https://journal-resp-website.netlify.app/" target="_blank">Към Проекта</a>
+                  <a href="https://travelix-clone-myt.netlify.app/" target="_blank">Към Проекта</a>
                 </div>
             </div>
-          </article>
+          </div>
           <!-- end of single project -->
           <!-- single project -->
-          <article class="single-project">
+          <div class="single-project store-item html/css" data-filter="html/css">
+            <div class="project-container">
+              <img src="./images/hg.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">Респонсив Уебсайт за Туризъм с HTML, CSS и Javascript</h4>
+              <p>
+                Напълно респонсив уебсайт, направих го с HTML, CSS и Javascript. Използвах tilt.js за картите и js за
+                скролване<br>
+
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://github.com/milkatemelkova/Holiday-Getaway" target="_blank"> <i
+                        class="fab fa-github"></i>
+                      Към Кода</a>
+                  </span>
+                  <a href="https://holiday-getaway-mt.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project store-item html/css" data-filter="html/css">
+            <div class="project-container">
+              <img src="./images/paypal.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">PayPal Clone с HTML, CSS и Javascript</h4>
+              <p>
+                Clone на PayPal UI. Респонсив е, Javascript е използван за менюто и за скриване на другите елементи при
+                кликване на login или signup<br>
+
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://github.com/milkatemelkova/PayPal-Clone" target="_blank"> <i
+                        class="fab fa-github"></i>
+                      Към Кода</a>
+                  </span>
+                  <a href="https://paypal-clone-mt.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project store-item html/css" data-filter="html/css">
+            <div class="project-container">
+              <img src="./images/bagw.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">Респонсив уебсайт с HTML, CSS и Javascript</h4>
+              <p>
+                Има видео в този респонсив уебсайт и анимиране със CSS Keyframes<br>
+
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://business-agency-website.netlify.app/" target="_blank"> <i
+                        class="fab fa-github"></i>
+                      Към Кода</a>
+                  </span>
+                  <a href="https://business-agency-website.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project store-item html/css" data-filter="html/css">
             <div class="project-container">
               <img src="./images/Fully.jpg" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
@@ -435,10 +579,10 @@
                   <a href="https://restaurant-resp-website.netlify.app/" target="_blank">Към Проекта</a>
                 </div>
             </div>
-          </article>
+          </div>
           <!-- end of single project -->
           <!-- single project -->
-          <article class="single-project">
+          <div class="single-project store-item apiprojects" data-filter="apiprojects">
             <div class="project-container">
               <img src="./images/Joke-gen.jpg" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
@@ -459,10 +603,10 @@
                   <a href="https://joke-api-js.netlify.app/" target="_blank">Към Проекта</a>
                 </div>
             </div>
-          </article>
+          </div>
           <!-- end of single project -->
           <!-- single project -->
-          <article class="single-project">
+          <article class="single-project store-item apiprojects" data-item="apiprojects">
             <div class="project-container">
               <img src="./images/QuotePic.jpg" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
@@ -487,8 +631,32 @@
           </article>
           <!-- end of single project -->
           <!-- single project -->
-          <article class="single-project">
+          <div class="single-project store-item html/css" data-filter="html/css">
             <div class="project-container">
+              <img src="./images/Journal.jpg" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">Респонсив Уебсайт- Блог, за новини </h4>
+              <p>
+                Напълно респонсив уебсайт, направих го с HTML, CSS and Bootstrap.<br>
+
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://github.com/milkatemelkova/Journal" target="_blank"> <i class="fab fa-github"></i>
+                      Към Кода</a>
+                  </span>
+                  <a href="https://journal-resp-website.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project  store-item apiprojects" data-item="apiprojects">
+            <div class="project-container ">
               <img src="./images/WeatherApp.jpg" alt="single project" />
               <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
                 <i class="fas fa-home"></i>
@@ -508,23 +676,168 @@
                   <a href="https://weather-api-js-m.netlify.app/" target="_blank">Към Проекта</a>
                 </div>
             </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <article class="single-project store-item html/css" data-filter="html/css">
+            <div class="project-container">
+              <img src="./images/PartyAgency.jpg" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">Бизнес Респонсив Уебсайт с Javascript филтър</h4>
+              <p>
+                Напълно респонсив уебсайт, направих го с HTML, CSS, Bootstrap и Javascript <br> Използвах
+                Javascript за филтъра и има работещ бутон за връщане нагоре.
+
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://github.com/milkatemelkova/Party_Agency_Website" target="_blank"> <i
+                        class="fab fa-github"></i> Към Кода</a>
+                  </span>
+                  <a href="https://party-agency.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
           </article>
           <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project  store-item reactwebsites" data-filter="reactwebsites">
+            <div class="project-container ">
+              <img src="./images/react-website.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">React Респонсив Уебсайт</h4>
+              <p>
+                Респонсив Уебсайт създаден с React<br>
 
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://github.com/milkatemelkova/react-app-website" target="_blank"> <i
+                        class="fab fa-github"></i> Към Кода</a>
+                  </span>
+                  <a href="https://react-app-website-mt.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+
+          <!-- single project -->
+          <div class="single-project  store-item reactwebsites" data-filter="reactwebsites">
+            <div class="project-container ">
+              <img src="./images/react3.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">React Респонсив Уебсайт #3</h4>
+              <p>
+                Респонсив Уебсайт създаден с React<br>
+
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://github.com/milkatemelkova/react-website3" target="_blank"> <i
+                        class="fab fa-github"></i>
+                      Към Кода</a>
+                  </span>
+                  <a href="https://react-website3.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project  store-item reactwebsites" data-filter="reactwebsites">
+            <div class="project-container ">
+              <img src="./images/react4.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">React Респонсив Уебсайт #4</h4>
+              <p>
+                Респонсив Уебсайт създаден с React <br>
+
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://github.com/milkatemelkova/react-spa" target="_blank"> <i class="fab fa-github"></i>
+                      Към Кода</a>
+                  </span>
+                  <a href="https://react-spa-website.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project  store-item reactwebsites" data-filter="reactwebsites">
+            <div class="project-container ">
+              <img src="./images/react5.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">React Респонсив Уебсайт #5</h4>
+              <p>
+                Респонсив Уебсайт създаден с React <br>
+
+
+                <div class="project-footer">
+                  <span>
+                    <a href="https://github.com/milkatemelkova/react-resp-website" target="_blank"> <i
+                        class="fab fa-github"></i>
+                      Към Кода</a>
+                  </span>
+                  <a href="https://react-resp-website-mt2.netlify.app/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
+          <!-- single project -->
+          <div class="single-project  store-item wordpress" data-filter="wordpress">
+            <div class="project-container ">
+              <img src="./images/avto.png" alt="single project" />
+              <a href="https://github.com/milkatemelkova" target="_blank" class="project-icon">
+                <i class="fas fa-home"></i>
+              </a>
+            </div>
+            <div class="project-details">
+              <h4 class="text-center">Wordpress Уебсайт за Сервиз на Коли</h4>
+              <p>
+                Създадох уебсайта за местен бизнес за сервиз на коли в Каварна. <br>
+
+
+                <div class="project-footer">
+
+                  <a href="http://avtoservizkavarna.ml/" target="_blank">Към Проекта</a>
+                </div>
+            </div>
+          </div>
+          <!-- end of single project -->
         </div>
       </section>
   </div>
-
 
   <!-- timeline -->
   <section class="section timeline">
     <!-- section-title -->
     <div class="section-title">
-      <h2>Related Education</h2>
+      <h2>Образование</h2>
       <div class="underline"></div>
       <p class="projects-text">
-        Образованието ми включва  Магистратура по Софтуерни Технологии - Софийски Университете "Св. Климент Охридски"  <br>
-        През 2019- 2020 завърших 2- семестриално обучение по Web Development в NetIt, София. <br> Освен тези образователни програми, съм завършила 
+        Образованието ми включва Магистратура по Софтуерни Технологии - Софийски Университете "Св. Климент Охридски"
+        <br>
+        През 2019- 2020 завърших 2- семестриално обучение по Web Development в NetIt, София. <br> Освен тези
+        образователни програми, съм завършила
         много онлайн курсове по <br> HTML, CSS, Bоotstrap, Javascript, jQuery, React.
       </p>
     </div>
@@ -620,9 +933,16 @@
       </ul>
     </ul>
 
-    <p>&copy; <span id="date"></span> Направено с  <i class="far fa-heart"></i> от Милка Темелкова</p>
+    <p>&copy; <span id="date"></span> Направено с <i class="far fa-heart"></i> от Милка Темелкова</p>
   </footer>
   <script src="./js/app.js"></script>
 </body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
