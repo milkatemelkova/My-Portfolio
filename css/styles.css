@@ -16,7 +16,7 @@ Fonts
   --clr-primary-3: hsl(43, 72%, 37%);
   --clr-primary-4: hsl(42, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: #87245b;
+  --clr-primary-5: #c8d7cd;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(352, 73%, 88%);
   --clr-primary-7: hsl(58, 98%, 65%);
@@ -447,7 +447,7 @@ Hero
     max-height: 25rem;
     -o-object-fit: cover;
     object-fit: cover;
-    border-radius: var(--radius);
+    /*border-radius: var(--radius); */
     /* place the image in front of ::before */
     position: relative;
     border: double 12px var(--clr-primary-5);
